@@ -1,0 +1,113 @@
+html {
+	height: 100%;
+	position: relative;
+}
+
+body {
+	background-color: rgb(44,148,173);
+	font-family: Facile Sans;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Facile Sans;
+	src: url(fonts/Facile Sans.woff);
+}
+header {
+	background-color: aliceblue;
+	margin-bottom: 10px;
+}
+a {
+	color: rgb(146,195,209);
+	text-decoration: none;
+}
+.navig-menu {
+	overflow: hidden;
+	border: none;
+	background-color: aliceblue;
+}
+.menu {
+	padding-right: 25px;
+	text-transform: uppercase;
+	font-family: Facile Sans;
+}
+.nav > li > a {
+	display: -webkit-inline-box;
+	text-decoration: overline;
+	border: none;
+	color: rgb(146,195,209);
+}
+.nav > li > a:hover {
+	background-color: inherit;
+	color: rgb(44,148,173);
+	text-decoration: overline;
+}
+.navig {
+	height: 75px;
+	line-height: 4.2;
+}
+
+.imlogo {
+	padding-left: 50px;
+}
+
+
+.container {
+	padding: 0;
+}
+
+#content {
+	background-color: #fff;
+	padding: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#content h1 {
+	margin-left: 20px;
+}
+ul#filter {
+	margin: 0;
+	padding: 0;
+}
+.filter {
+	color: #fff;
+	background-color: blue;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 5px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.mix {
+	margin-top: 10px!important;
+}
+.mix > div {
+	padding: 10px;
+}
+.mix h2 {
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	letter-spacing: -1px;
+	font-size: 19px;
+	text-decoration: none;
+}
+.mix > div > h2 > a:hover {
+	color: rgb(44,148,173);
+	text-decoration: none;
+}
+.mix h2 em {
+	display: block;
+	text-transform: none;
+	font-size: 14px;
+	margin-bottom: 2px;
+}
+.animation {
+	min-height: 250px;
+	border: 10px solid #fff;
+	background-size: cover;
+}
+.animation a {
+	display: block;
+	width: 100%;
+	min-height: 250px;
+}

@@ -1,0 +1,128 @@
+
+
+body {
+	background-color: rgb(44,148,173);
+	font-family: Facile Sans;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Facile Sans;
+	src: url(fonts/Facile Sans.woff);
+}
+header {
+	background-color: aliceblue;
+	margin-bottom: 10px;
+}
+.navig-menu {
+	overflow: hidden;
+	border: none;
+	background-color: aliceblue;
+}
+.menu {
+	padding-right: 25px;
+	text-transform: uppercase;
+	font-family: Facile Sans;
+}
+.nav > li > a {
+	display: -webkit-inline-box;
+	text-decoration: overline;
+	border: none;
+	color: rgb(146,195,209);
+}
+.nav > li > a:hover {
+	background-color: inherit;
+	color: rgb(44,148,173);
+	text-decoration: overline;
+}
+.navig {
+	height: 75px;
+	line-height: 4.2;
+}
+
+.imlogo {
+	padding-left: 50px;
+}
+.block {
+	height: 300px;
+	width: 1140px;
+	background: rgb(231,239,243);
+	margin-top: 20px;
+}
+.block1 {
+	height: 560px;
+	margin-top: 15px;
+}
+.my-col {
+	height: 100%;
+}
+.mini-col {
+	height: 100%;
+	vertical-align: middle;
+	background-color: aliceblue;
+}
+.left-mini {
+	height: 10%;
+	padding-top: 10px;
+}
+.mini-col > .left-mini > img {
+	float: left;
+	margin-top: 8px;
+}
+.mini-col > .left-mini > p {
+	font-size: xx-large;
+	font-family: 'Facile Sans';
+	margin-right: -20px;
+	text-transform: uppercase;
+	color: rgb(146,195,209);
+}
+.block-mini {
+	margin-top: 21px;
+	height: auto;
+}
+.block-mini-min {
+	margin-top: 77px;
+	height: auto;
+}
+.collection-text {
+	margin-top: 15px;
+	
+}
+.collection-text p {
+	max-height: 161px;
+	overflow: hidden;
+	white-space: pre-wrap;
+}
+p {
+	font-family: 'Facile Sans';
+}
+.coll-text {
+	font-family: 'Facile Sans';
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mini-col a {
+	margin-top: 10px;
+	margin-bottom: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------ffoooooooter -------- */
+.foot {
+	margin-bottom: 0;
+	margin-top: 15px;
+	background-color: rgb(229,240,244);
+}

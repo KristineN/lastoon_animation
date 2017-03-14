@@ -1,0 +1,93 @@
+html {
+	height: 100%;
+	position: relative;
+}
+
+body {
+	background-color: rgb(44,148,173);
+	font-family: Facile Sans;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Facile Sans;
+	src: url(fonts/Facile Sans.woff);
+}
+header {
+	background-color: aliceblue;
+	margin-bottom: 10px;
+}
+a {
+	color: rgb(146,195,209);
+	text-decoration: none;
+}
+h1,
+h2 {
+	font-family: Facile Sans;
+	color: rgb(146,195,209);
+}
+
+#information > p > strong {
+	color: rgb(44,148,173);
+}
+.navig-menu {
+	overflow: hidden;
+	border: none;
+	background-color: aliceblue;
+}
+.menu {
+	padding-right: 25px;
+	text-transform: uppercase;
+	font-family: Facile Sans;
+}
+.nav > li > a {
+	display: -webkit-inline-box;
+	text-decoration: overline;
+	border: none;
+	color: rgb(146,195,209);
+}
+.nav > li > a:hover {
+	background-color: inherit;
+	color: rgb(44,148,173);
+	text-decoration: overline;
+}
+.navig {
+	height: 75px;
+	line-height: 4.2;
+}
+
+.imlogo {
+	padding-left: 50px;
+}
+
+
+.container {
+	padding: 0;
+}
+
+#content {
+	background-color: aliceblue;
+	padding: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#content img {
+	max-width: 100%;
+	height: auto;
+	margin: 20px auto;
+}
+.image_rond {
+	float: left;
+	margin-right: 20px!important;
+	max-width: 400px!important;
+	margin-top: 0!important;
+}
+#information {
+	padding: 0 10px 10px 10px;
+	border: 1px solid blue;
+	margin-top: 20px;
+}
+.img-responsiv {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
