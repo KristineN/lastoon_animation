@@ -8,6 +8,9 @@ body {
 @font-face {
 	font-family: Facile Sans;
 	src: url(fonts/Facile Sans.woff);
+	src: url(fonts/Facile Sans.ttf);
+	src: url(fonts/Facile Sans.otf);
+	src: url(fonts/Facile Sans.eot);
 }
 header {
 	background-color: aliceblue;
