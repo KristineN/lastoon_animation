@@ -1,5 +1,10 @@
-
-
+html {
+	height: 100%;
+}
+head {
+	height: 100%;
+	position: relative;
+}
 body {
 	background-color: rgb(44,148,173);
 	font-family: Facile Sans;
@@ -8,9 +13,10 @@ body {
 @font-face {
 	font-family: Facile Sans;
 	src: url(fonts/Facile Sans.woff);
-	src: url(fonts/Facile Sans.ttf);
+	src: url(fonts/Facile Sans.ttf) format("truetype");
 	src: url(fonts/Facile Sans.otf);
-	src: url(fonts/Facile Sans.eot);
+	src: url(fonts/Facile Sans.eot?#iefix) format("embedded-onetype");
+	src: url(fonts/fonts/Facile Sans.svg#Facile Sans) format("svg");
 }
 header {
 	background-color: aliceblue;
@@ -55,7 +61,7 @@ header {
 	height: 560px;
 	margin-top: 15px;
 }
-.my-col {
+ /*.my-col { 
 	height: 100%;
 }
 .mini-col {
@@ -108,7 +114,20 @@ p {
 	margin-top: 10px;
 	margin-bottom: 11px;
 }
-
+*/
+#showcase {
+	padding-top: 10px;
+	line-height: 15px;
+}
+#showcase 
+.container > .row > div {
+	margin-top: 10px;
+} 
+#showcase
+.container > .row > div > div {
+	background-color: aliceblue;
+	padding: 15px;
+}
 
 
 

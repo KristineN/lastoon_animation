@@ -14,6 +14,10 @@ body {
 @font-face {
 	font-family: Facile Sans;
 	src: url(fonts/Facile Sans.woff);
+	src: url(fonts/Facile Sans.ttf) format("truetype");
+	src: url(fonts/Facile Sans.otf);
+	src: url(fonts/Facile Sans.eot?#iefix) format("embedded-onetype");
+	src: url(fonts/fonts/Facile Sans.svg#Facile Sans) format("svg");
 }
 header {
 	background-color: aliceblue;
