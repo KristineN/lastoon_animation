@@ -1,5 +1,8 @@
 html {
 	height: 100%;
+}
+head {
+	height: 100%;
 	position: relative;
 }
 
@@ -19,6 +22,7 @@ body {
 header {
 	background-color: aliceblue;
 	margin-bottom: 10px;
+	border-radius: 4px;
 }
 a {
 	color: rgb(146,195,209);
@@ -114,4 +118,16 @@ ul#filter {
 	display: block;
 	width: 100%;
 	min-height: 250px;
+}
+
+
+/* -------------ffoooooooter -------- */
+.foot {
+	margin-bottom: 0;
+	margin-top: 20px;
+	background-color: rgb(229,240,244);
+	position: absolute;
+	width: 98%;
+	padding-bottom: 60px;
+
 }

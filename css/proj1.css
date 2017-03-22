@@ -19,6 +19,7 @@ body {
 header {
 	background-color: aliceblue;
 	margin-bottom: 10px;
+	border-radius: 4px;
 }
 a {
 	color: rgb(146,195,209);
@@ -93,4 +94,16 @@ h2 {
 	display: block;
 	max-width: 100%;
 	height: auto;
+}
+
+
+/* -------------ffoooooooter -------- */
+.foot {
+	margin-bottom: 0;
+	margin-top: 20px;
+	background-color: rgb(229,240,244);
+	position: absolute;
+	width: 98%;
+	padding-bottom: 60px;
+
 }
