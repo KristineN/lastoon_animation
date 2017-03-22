@@ -129,6 +129,16 @@ p {
 	background-color: aliceblue;
 	padding: 15px;
 }
+#showcase h2 {
+	font-size: 25px;
+	letter-spacing: 0px;
+	padding: 0px 0 20px 15px;
+}
+h3 {
+	font-family: 'Facile Sans';
+	font-weight: 700;
+	text-transform: uppercase;
+}
 
 
 
