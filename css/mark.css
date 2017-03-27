@@ -1,0 +1,127 @@
+html {
+	height: 100%;
+	position: relative;
+}
+
+body {
+	background-color: rgb(44,148,173);
+	font-family: Facile Sans;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Facile Sans;
+	src: url(fonts/Facile Sans.woff);
+	src: url(fonts/Facile Sans.ttf) format("truetype");
+	src: url(fonts/Facile Sans.otf);
+	src: url(fonts/Facile Sans.eot?#iefix) format("embedded-onetype");
+	src: url(fonts/fonts/Facile Sans.svg#Facile Sans) format("svg");
+}
+
+a {
+	color: rgb(146,195,209);
+	text-decoration: none;
+}
+h1,
+h2 {
+	font-family: Facile Sans;
+	color: rgb(146,195,209);
+}
+
+/* HEADER */
+header {
+	background-color: aliceblue;
+	margin-bottom: 10px;
+	border-radius: 4px;
+}
+header .container {
+	background-color: aliceblue;
+	border-radius: 4px;
+}
+header .container .row {
+	background-color: aliceblue;
+	border-radius: 4px;
+}
+nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: right;
+	width: 100%;
+	font-family: 'Facile Sans';
+}
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 50px 10px 30px 10px;
+	text-decoration: none;
+}
+nav ul li a {
+	text-decoration: overline;
+	color: rgb(146,195,209);
+
+}
+nav ul li a:hover {
+	color: rgb(44,148,173);
+	text-decoration: overline;
+	background-color: inherit;
+}
+.selectnav {
+	display: none;
+}
+option {
+	font-weight: normal;
+	display: block;
+	white-space: pre;
+	min-height: 1.2em;
+	padding: 0px 2px 1px;
+}
+/* /HEADER */
+
+
+.container {
+	padding: 0;
+}
+
+#content {
+	background-color: aliceblue;
+	padding: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
+#content img {
+	max-width: 100%;
+	height: auto;
+	margin: 20px auto;
+}
+.image_rond {
+	float: left;
+	margin-right: 20px!important;
+	max-width: 400px!important;
+	margin-top: 0!important;
+}
+#information {
+	padding: 0 10px 10px 10px;
+	margin-top: 20px;
+}
+#information > p > strong {
+	color: rgb(44,148,173);
+}
+.img-responsiv {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* -------------ffoooooooter -------- */
+.foot {
+	margin-bottom: 0;
+	margin-top: 20px;
+	background-color: rgb(229,240,244);
+	position: absolute;
+	width: 98%;
+	padding-bottom: 60px;
+
+}
