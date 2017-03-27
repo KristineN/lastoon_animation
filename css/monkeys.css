@@ -1,8 +1,5 @@
 html {
 	height: 100%;
-}
-head {
-	height: 100%;
 	position: relative;
 }
 
@@ -19,16 +16,28 @@ body {
 	src: url(fonts/Facile Sans.eot?#iefix) format("embedded-onetype");
 	src: url(fonts/fonts/Facile Sans.svg#Facile Sans) format("svg");
 }
+
 a {
 	color: rgb(146,195,209);
 	text-decoration: none;
 }
-/* HEADER */
+h1,
+h2 {
+	font-family: Facile Sans;
+	color: rgb(146,195,209);
+}
 
-header .container .row {
+/* HEADER */
+header {
+	background-color: aliceblue;
 	margin-bottom: 10px;
-	margin-left: 0;
-	margin-right: 0;
+	border-radius: 4px;
+}
+header .container {
+	background-color: aliceblue;
+	border-radius: 4px;
+}
+header .container .row {
 	background-color: aliceblue;
 	border-radius: 4px;
 }
@@ -67,22 +76,52 @@ option {
 	min-height: 1.2em;
 	padding: 0px 2px 1px;
 }
+/* /HEADER */
 
-/* HEADER */
 
-/* Content */
 .container {
-	padding-left: 0;
-	padding-right: 0;
+	padding: 0;
 }
-#continue {
+
+#content {
 	background-color: aliceblue;
 	padding: 40px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	border-radius: 4px;
 }
-#continue img {
+#content img {
 	max-width: 100%;
 	height: auto;
 	margin: 20px auto;
+}
+.image_rond {
+	float: left;
+	margin-right: 20px!important;
+	max-width: 400px!important;
+	margin-top: 0!important;
+}
+#information {
+	padding: 0 10px 10px 10px;
+	margin-top: 20px;
+}
+#information > p > strong {
+	color: rgb(44,148,173);
+}
+.img-responsiv {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* -------------ffoooooooter -------- */
+.foot {
+	margin-bottom: 0;
+	margin-top: 20px;
+	background-color: rgb(229,240,244);
+	position: absolute;
+	width: 98%;
+	padding-bottom: 60px;
+
 }

@@ -28,35 +28,56 @@ a {
 	color: rgb(146,195,209);
 	text-decoration: none;
 }
-.navig-menu {
-	overflow: hidden;
-	border: none;
-	background-color: aliceblue;
-}
-.menu {
-	padding-right: 25px;
-	text-transform: uppercase;
-	font-family: Facile Sans;
-}
-.nav > li > a {
-	display: -webkit-inline-box;
-	text-decoration: overline;
-	border: none;
-	color: rgb(146,195,209);
-}
-.nav > li > a:hover {
-	background-color: inherit;
-	color: rgb(44,148,173);
-	text-decoration: overline;
-}
-.navig {
-	height: 75px;
-	line-height: 4.2;
+/* header */
+header {
+	background-color: rgb(44,148,173);
+	margin-bottom: 10px;
 }
 
-.imlogo {
-	padding-left: 50px;
+header .container .row {
+	background-color: aliceblue;
+	border-radius: 4px;
 }
+header .container {
+	background-color: aliceblue;
+	border-radius: 4px;
+}
+nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: right;
+	width: 100%;
+	font-family: 'Facile Sans';
+}
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 50px 10px 30px 10px;
+	text-decoration: none;
+}
+nav ul li a {
+	text-decoration: overline;
+	color: rgb(146,195,209);
+
+}
+nav ul li a:hover {
+	color: rgb(44,148,173);
+	text-decoration: overline;
+	background-color: inherit;
+}
+.selectnav {
+	display: none;
+}
+option {
+	font-weight: normal;
+	display: block;
+	white-space: pre;
+	min-height: 1.2em;
+	padding: 0px 2px 1px;
+}
+/* /header */
 
 
 .container {

@@ -1,3 +1,11 @@
+@font-face {
+	font-family: Facile Sans;
+	src: url(fonts/Facile Sans.woff);
+	src: url(fonts/Facile Sans.ttf) format("truetype");
+	src: url(fonts/Facile Sans.otf);
+	src: url(fonts/Facile Sans.eot?#iefix) format("embedded-onetype");
+	src: url(fonts/fonts/Facile Sans.svg#Facile Sans) format("svg");
+}
 html {
 	min-height: 100%;
 	position: relative;
@@ -9,52 +17,66 @@ body {
 	font-weight: 400;
 	margin-bottom: 55px !important;
 }
-@font-face {
-	font-family: Facile Sans;
-	src: url(fonts/Facile Sans.woff);
-	src: url(fonts/Facile Sans.ttf) format("truetype");
-	src: url(fonts/Facile Sans.otf);
-	src: url(fonts/Facile Sans.eot?#iefix) format("embedded-onetype");
-	src: url(fonts/fonts/Facile Sans.svg#Facile Sans) format("svg");
+body .container {
+	padding: 0;
 }
+
+a {
+	color: rgb(146,195,209);
+	text-decoration: none;
+}
+/* HEADER */
 header {
 	background-color: aliceblue;
 	margin-bottom: 10px;
 	border-radius: 4px;
 }
-a {
-	color: rgb(146,195,209);
+header > .container {
+	background-color: aliceblue;
+	border-radius: 4px;
+	padding: 0;
+}
+header .container .row {
+	background-color: aliceblue;
+	border-radius: 4px;
+	margin: 0;
+}
+nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: right;
+	width: 100%;
+	font-family: 'Facile Sans';
+}
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 50px 10px 30px 10px;
 	text-decoration: none;
 }
-.navig-menu {
-	overflow: hidden;
-	border: none;
-	background-color: aliceblue;
-}
-.menu {
-	padding-right: 25px;
-	text-transform: uppercase;
-	font-family: Facile Sans;
-}
-.nav > li > a {
-	display: -webkit-inline-box;
+nav ul li a {
 	text-decoration: overline;
-	border: none;
 	color: rgb(146,195,209);
+
 }
-.nav > li > a:hover {
-	background-color: inherit;
+nav ul li a:hover {
 	color: rgb(44,148,173);
 	text-decoration: overline;
+	background-color: inherit;
 }
-.navig {
-	height: 75px;
-	line-height: 4.2;
+.selectnav {
+	display: none;
 }
-
-.imlogo {
-	padding-left: 50px;
+option {
+	font-weight: normal;
+	display: block;
+	white-space: pre;
+	min-height: 1.2em;
+	padding: 0px 2px 1px;
 }
+/* /HEADER */
 
 .form-group {
 	width: 100%;
@@ -99,6 +121,7 @@ h2 {
 
 /* -------------ffoooooooter -------- */
 .foot {
+	height: 50px;
 	margin-bottom: 0;
 	margin-top: 20px;
 	background-color: rgb(229,240,244);

@@ -16,11 +16,7 @@ body {
 	src: url(fonts/Facile Sans.eot?#iefix) format("embedded-onetype");
 	src: url(fonts/fonts/Facile Sans.svg#Facile Sans) format("svg");
 }
-header {
-	background-color: aliceblue;
-	margin-bottom: 10px;
-	border-radius: 4px;
-}
+
 a {
 	color: rgb(146,195,209);
 	text-decoration: none;
@@ -31,38 +27,56 @@ h2 {
 	color: rgb(146,195,209);
 }
 
-#information > p > strong {
-	color: rgb(44,148,173);
-}
-.navig-menu {
-	overflow: hidden;
-	border: none;
+/* HEADER */
+header {
 	background-color: aliceblue;
+	margin-bottom: 10px;
+	border-radius: 4px;
 }
-.menu {
-	padding-right: 25px;
+header .container {
+	background-color: aliceblue;
+	border-radius: 4px;
+}
+header .container .row {
+	background-color: aliceblue;
+	border-radius: 4px;
+}
+nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: right;
+	width: 100%;
+	font-family: 'Facile Sans';
+}
+nav ul li {
+	display: inline-block;
 	text-transform: uppercase;
-	font-family: Facile Sans;
+	text-align: center;
+	padding: 50px 10px 30px 10px;
+	text-decoration: none;
 }
-.nav > li > a {
-	display: -webkit-inline-box;
+nav ul li a {
 	text-decoration: overline;
-	border: none;
 	color: rgb(146,195,209);
+
 }
-.nav > li > a:hover {
-	background-color: inherit;
+nav ul li a:hover {
 	color: rgb(44,148,173);
 	text-decoration: overline;
+	background-color: inherit;
 }
-.navig {
-	height: 75px;
-	line-height: 4.2;
+.selectnav {
+	display: none;
 }
-
-.imlogo {
-	padding-left: 50px;
+option {
+	font-weight: normal;
+	display: block;
+	white-space: pre;
+	min-height: 1.2em;
+	padding: 0px 2px 1px;
 }
+/* /HEADER */
 
 
 .container {
@@ -74,6 +88,7 @@ h2 {
 	padding: 40px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	border-radius: 4px;
 }
 #content img {
 	max-width: 100%;
@@ -89,6 +104,9 @@ h2 {
 #information {
 	padding: 0 10px 10px 10px;
 	margin-top: 20px;
+}
+#information > p > strong {
+	color: rgb(44,148,173);
 }
 .img-responsiv {
 	display: block;

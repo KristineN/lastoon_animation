@@ -19,40 +19,53 @@ body {
 	font-weight: 400;
 }
 
-header {
-	background-color: aliceblue;
+/* HEADER */
+
+header .container .row {
 	margin-bottom: 10px;
+	margin-left: 0;
+	margin-right: 0;
+	background-color: aliceblue;
 	border-radius: 4px;
 }
-.navig-menu {
-	overflow: hidden;
-	border: none;
-	background-color: aliceblue;
-}
-.menu {
-	padding-right: 25px;
-	text-transform: uppercase;
+nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: right;
+	width: 100%;
 	font-family: 'Facile Sans';
 }
-.nav > li > a {
-	display: -webkit-inline-box;
-	text-decoration: overline;
-	border: none;
-	color: rgb(146,195,209);
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 50px 10px 30px 10px;
+	text-decoration: none;
 }
-.nav > li > a:hover {
-	background-color: inherit;
+nav ul li a {
+	text-decoration: overline;
+	color: rgb(146,195,209);
+
+}
+nav ul li a:hover {
 	color: rgb(44,148,173);
 	text-decoration: overline;
+	background-color: inherit;
 }
-.navig {
-	height: 75px;
-	line-height: 4.2;
+.selectnav {
+	display: none;
+}
+option {
+	font-weight: normal;
+	display: block;
+	white-space: pre;
+	min-height: 1.2em;
+	padding: 0px 2px 1px;
 }
 
-.imlogo {
-	padding-left: 50px;
-}
+/* HEADER */
+
 .block {
 	height: 300px;
 	width: 1140px;
