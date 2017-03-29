@@ -142,6 +142,7 @@ p {
 .container > .row > div > div {
 	background-color: aliceblue;
 	padding: 15px;
+	border-radius: 4px;
 }
 #showcase h2 {
 	font-size: 25px;
@@ -152,6 +153,11 @@ h3 {
 	font-family: 'Facile Sans';
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+video {
+	width: 100%;
+	height: auto;
 }
 
 
