@@ -9,6 +9,7 @@
 	<link href="css/contactus.css" rel="stylesheet">
 	<link href="fonts/fonts.css" rel="stylesheet">
 	<link href="css/bootstrap-social.css" rel="stylesheet">
+	<!--#include virtual="/send.php" -->
 	<style>
 	@font-face {
 	font-family: 'Facile Sans';
@@ -19,6 +20,7 @@
 		 url('http://hasky.hol.es/fonts/fonts/Facile Sans.svg#Facile Sans') format('svg');
 		}
 	</style>
+
 </head>
 <body>
 	<div class="container">
@@ -76,37 +78,60 @@
 			</div>
 
 			<div class="col-md-4 col-sm-4 col-xs-4">
-				<form role="form">
-					<div class="form-group">
-				    <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Name:" required>
-				  </div>
+				<form class="well form-horizontal" role="form" action="mailto:kristinenyunko@gmail.com" method="post" id="contact_form">
+					<fieldset>
+						<div class="form-group">  
+						  <div class="col-md-4 col-sm-4 col-xs-4 inputGroupContainer">
+						  <div class="input-group">
+						  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						  <input  name="first_name" placeholder="Name" class="form-control"  type="text" required>
+						    </div>
+						  </div>
+						</div>
+
+				 	 <div class="form-group">
+					    <div class="col-md-4 inputGroupContainer">
+					    	<div class="input-group">
+					  			<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					  			<input name="last_name" placeholder="Surname" class="form-control"  type="text" required>
+					   		 </div>
+					  	</div>
+					</div>
+
+				  <div class="form-group"> 
+			   		 <div class="col-md-4 inputGroupContainer">
+			    		<div class="input-group">
+			       			<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+			  				<input name="email" placeholder="E-Mail" class="form-control"  type="text" required>
+			    		</div>
+			  		</div>
+				</div>
+
+				<div class="form-group">
+				    <div class="col-md-4 inputGroupContainer">
+				    	<div class="input-group">
+				        	<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+				        	<textarea class="form-control" name="comment" placeholder="Message" required></textarea>
+				  		</div>
+				  	</div>
+				</div>
 
 				  <div class="form-group">
-				    <input type="surname" class="form-control" id="exampleInputPassword1" placeholder="Surname:" required>
-				  </div>
+					  <div class="col-md-7">
+					  	<input style="opacity: 0; z-index: -1;" type="file" name="upload" id="uploadbtn">
+					    <label for="uploadbtn" class="Button"><span class="glyphicon glyphicon-paperclip"></span>Choose the file</label>
+					
+					  </div>
+				</div>
 
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email:" requuired>
-				  </div>
-
-				  <div class="form-group">
-				  	<textarea type="text" class="form-control" rows="3" placeholder="Message:"></textarea>
-				  </div>
-
-				  <div class="form-group">
-				   <!-- <input type="file" id="exampleInputFile">-->
-				   <label for="uploadbtn" class="uploadButton">Choose the file</label>
-					<input style="opacity: 0; z-index: -1;" type="file" name="upload" id="uploadbtn">
-				  </div>
-
-				 <!-- <form action="mailto:kristinenyunko@gmsil.com" method="post" enctype="text/plain" >
-					FirstName:<input type="text" name="FirstName">
-					Email:<input type="text" name="Email">
-					<input type="submit" name="submit" value="Submit">
-				</form>-->
-
-				  <button type="submit" class="btn btn-default">Send</button>
-				</form>
+				 <div class="form-group">
+					  <div class="col-md-4">
+					    <button type="submit" class="btn btn-primary btnn" >Send <span class="glyphicon glyphicon-send"></span></button>
+					  </div>
+				</div>
+				</fieldset>
+					
+			</form>
 			</div>
 
 			<div class="col-md-4">
@@ -126,6 +151,8 @@
 		</div>
 		<!-- ################### CONTENT ##############-->
 
+		
+
       <!--####### FOOTER #####-->
 	<div class="container well foot">
 		<div class="footer-bottom">
@@ -136,12 +163,27 @@
 	</div>
 	<!--####### /FOOTER #####-->
 
+
+
 </div>
 
 
 	
-	
-
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#contact_form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "php/send.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отпрвлено!");
+            });
+    });
+});    
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
