@@ -66,70 +66,7 @@ option {
 
 /* HEADER */
 
-.block {
-	height: 300px;
-	width: 1140px;
-	background: rgb(231,239,243);
-	margin-top: 20px;
-}
-.block1 {
-	height: 560px;
-	margin-top: 15px;
-}
- /*.my-col { 
-	height: 100%;
-}
-.mini-col {
-	height: 100%;
-	vertical-align: middle;
-	background-color: aliceblue;
-}
-.left-mini {
-	height: 10%;
-	padding-top: 10px;
-}
-.mini-col > .left-mini > img {
-	float: left;
-	margin-top: 8px;
-}
-.mini-col > .left-mini > p {
-	font-size: xx-large;
-	font-family: 'Facile Sans';
-	margin-right: -20px;
-	text-transform: uppercase;
-	color: rgb(146,195,209);
-}
-.block-mini {
-	margin-top: 21px;
-	height: auto;
-}
-.block-mini-min {
-	margin-top: 77px;
-	height: auto;
-}
-.collection-text {
-	margin-top: 15px;
-	
-}
-.collection-text p {
-	max-height: 161px;
-	overflow: hidden;
-	white-space: pre-wrap;
-}
-p {
-	font-family: 'Facile Sans';
-}
-.coll-text {
-	font-family: 'Facile Sans';
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-.mini-col a {
-	margin-top: 10px;
-	margin-bottom: 11px;
-}
-*/
+/* CONTENT */
 #showcase {
 	padding-top: 10px;
 	line-height: 15px;
@@ -172,7 +109,9 @@ video {
 	width:100%;
 }
  
-.embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object{
+.embed-responsive .embed-responsive-item, 
+.embed-responsive iframe, .embed-responsive embed, 
+.embed-responsive object{
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -182,13 +121,7 @@ video {
 	border: 0;
 }
 
-
-
-
-
-
-
-
+/* /CONTENT */
 
 
 
