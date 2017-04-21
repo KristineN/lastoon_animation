@@ -25,34 +25,31 @@ a {
 }
 /* HEADER */
 
-header .container .row {
-	margin-bottom: 10px;
-	margin-left: 0;
-	margin-right: 0;
+header {
 	background-color: aliceblue;
+	margin-bottom: 10px;
 	border-radius: 4px;
 }
-nav ul {
-	list-style: none;
-	padding: 0px;
-	margin: 0px;
-	text-align: right;
-	width: 100%;
-	font-family: 'Facile Sans';
+header > .navbar {
+	background-color: aliceblue;
+	border-radius: 4px;
+	padding: 0;
 }
-nav ul li {
-	display: inline-block;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 50px 10px 30px 10px;
-	text-decoration: none;
+#logo {
+	margin-left: 15px;
 }
-nav ul li a {
-	text-decoration: overline;
+.navbar-nav {
+	float: right;
+	margin-top: 15px;
+}
+.navbar-default
+.navbar-nav>li>a {
 	color: rgb(146,195,209);
-
+	text-decoration: overline;
 }
-nav ul li a:hover {
+
+.navbar-default
+.navbar-nav>li>a:hover {
 	color: rgb(44,148,173);
 	text-decoration: overline;
 	background-color: inherit;
@@ -78,7 +75,6 @@ option {
 #continue {
 	background-color: aliceblue;
 	padding: 40px;
-	margin-top: 20px;
 	margin-bottom: 20px;
 	border-radius: 4px;
 }

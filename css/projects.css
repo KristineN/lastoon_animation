@@ -10,6 +10,7 @@ body {
 	background-color: rgb(44,148,173);
 	font-family: Facile Sans;
 	font-weight: 400;
+	height: 100%;
 }
 @font-face {
 	font-family: Facile Sans;
@@ -30,39 +31,30 @@ a {
 }
 /* header */
 header {
-	background-color: rgb(44,148,173);
+	background-color: aliceblue;
 	margin-bottom: 10px;
-}
-
-header .container .row {
-	background-color: aliceblue;
 	border-radius: 4px;
 }
-header .container {
+header > .navbar {
 	background-color: aliceblue;
 	border-radius: 4px;
+	padding: 0;
 }
-nav ul {
-	list-style: none;
-	padding: 0px;
-	margin: 0px;
-	text-align: right;
-	width: 100%;
-	font-family: 'Facile Sans';
+#logo {
+	margin-left: 15px;
 }
-nav ul li {
-	display: inline-block;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 50px 10px 30px 10px;
-	text-decoration: none;
+.navbar-nav {
+	float: right;
+	margin-top: 15px;
 }
-nav ul li a {
-	text-decoration: overline;
+.navbar-default
+.navbar-nav>li>a {
 	color: rgb(146,195,209);
-
+	text-decoration: overline;
 }
-nav ul li a:hover {
+
+.navbar-default
+.navbar-nav>li>a:hover {
 	color: rgb(44,148,173);
 	text-decoration: overline;
 	background-color: inherit;
@@ -87,8 +79,6 @@ option {
 #content {
 	background-color: aliceblue;
 	padding: 40px;
-	margin-top: 20px;
-	margin-bottom: 20px;
 	border-radius: 4px;
 }
 #content h1 {
@@ -130,6 +120,9 @@ ul#filter {
 	text-transform: none;
 	font-size: 14px;
 	margin-bottom: 2px;
+}
+.image {
+	border: 10px solid #fff;
 }
 .animation {
 	min-height: 250px;

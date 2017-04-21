@@ -6,9 +6,9 @@
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0">
 	<title>Lastoon animation</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-social.css" rel="stylesheet">
 	<link href="css/contactus.css" rel="stylesheet">
 	<link href="fonts/fonts.css" rel="stylesheet">
-	<link href="css/bootstrap-social.css" rel="stylesheet">
 	<!--#include virtual="/send.php" -->
 	<style>
 	@font-face {
@@ -26,50 +26,39 @@
 	<div class="container">
 		<!--############### HEADER #############-->
 		<header>
-			<div class="container">
+			<div class="navbar navbar-default">
 				<div class="row">
 					<div class="col-xs-12 col-md-4 col-sm-12" id="logo">
 						<img src="img/logo.png" class="img-responsive" alt="Logo to Lastoon Animation">
 					</div>
-					<div class="clearfix visible-sm"></div>
-					<div class="col-xs-6 col-sm-10 col-md-8">
-						<nav id="navigation">
-							<div class="_menu">
-								<ul id="menutop" class="menu">
-									<li class="item-103 current active">
-										<a href="index.html">Home</a>
-									</li>
-									<li class="item-139">
-										<a href="aboutus.html">About Us</a>
-									</li>
-									<li class="item-104">
-										<a href="projects.html">Projects</a>
-									</li>
-									<li class="item-123">
-										<a href="news.html">News</a>
-									</li>
-									<li class="item-120">
-										<a href="contactus.html">Contact Us</a>
-									</li>
+					<div class="navbar-inner">
+					    <div class="container">
+					        <div class="navbar-header">
+					     		<a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false" href="#nav-collapse">
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+					      		</a>
+					 		</div>
+					      <!-- Поместите сюда все что вы хотите скрыть на дисплеях с шириной менее 940px -->
+					      	<div class="collapse navbar-collapse" id="nav-collapse">
+						        <ul class="nav navbar-nav">
+								<li><a href="index.html"><span>Home</span></a></li>
+								<li><a href="aboutus.html"><span>About us</span></a></li>
+								<li><a href="projects.html"><span>Projects</span></a></li>
+								<li><a href="news.html"><span>News</span></a></li>
+								<li><a href="contactus.html"><span>Contact us</span></a></li>
 								</ul>
-								<select class="selectnav" id="selectnav1">
-									<option value>Menu</option>
-									<option value="http://hasky.hol.es/index.html">Home</option>
-									<option value="http://hasky.hol.es/aboutus.html">Abput Us</option>
-									<option value="http://hasky.hol.es/progects.html">Projects</option>
-									<option value="http://hasky.hol.es/news.html">News</option>
-									<option value="http://hasky.hol.es/contactus.html">Contact Us</option>
-								</select>
-							</div>
-						</nav>
+					      </div>
+					  </div>
 					</div>
 				</div>
 			</div>
 		</header>
 		<!-- ################### /HEADER ##############-->
 		<!-- ################### CONTENT ##############-->
-
-		<div class="row contact-us">
+		<div class="container">
+			<div class="row contact-us">
 			<div class="col-md-12 col-sm-12 col-xs-12 text-left">
 				<h2 class="intro-text">
 					<h2>Contact Us</h2>
@@ -78,13 +67,13 @@
 			</div>
 
 			<div class="col-md-4 col-sm-4 col-xs-4">
-				<form class="well form-horizontal" role="form" action="mailto:kristinenyunko@gmail.com" method="post" id="contact_form">
+				<form class="well form-horizontal" role="form" method='POST' id="contact_form">
 					<fieldset>
 						<div class="form-group">  
 						  <div class="col-md-4 col-sm-4 col-xs-4 inputGroupContainer">
 						  <div class="input-group">
 						  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-						  <input  name="first_name" placeholder="Name" class="form-control"  type="text" required>
+						  <input  name="first_name" placeholder="Name" class="form-control" required="required" type="text">
 						    </div>
 						  </div>
 						</div>
@@ -93,7 +82,7 @@
 					    <div class="col-md-4 inputGroupContainer">
 					    	<div class="input-group">
 					  			<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-					  			<input name="last_name" placeholder="Surname" class="form-control"  type="text" required>
+					  			<input name="last_name" placeholder="Surname" required="required" class="form-control"  type="text">
 					   		 </div>
 					  	</div>
 					</div>
@@ -102,7 +91,7 @@
 			   		 <div class="col-md-4 inputGroupContainer">
 			    		<div class="input-group">
 			       			<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-			  				<input name="email" placeholder="E-Mail" class="form-control"  type="text" required>
+			  				<input name="email" placeholder="E-Mail" class="form-control" required="required" type="text">
 			    		</div>
 			  		</div>
 				</div>
@@ -111,7 +100,7 @@
 				    <div class="col-md-4 inputGroupContainer">
 				    	<div class="input-group">
 				        	<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-				        	<textarea class="form-control" name="comment" placeholder="Message" required></textarea>
+				        	<textarea class="form-control" required="required" name="comment" placeholder="Message"></textarea>
 				  		</div>
 				  	</div>
 				</div>
@@ -149,18 +138,58 @@
            			</address>
 			</div>
 		</div>
+		</div>
+	
+		
 		<!-- ################### CONTENT ##############-->
 
 		
 
       <!--####### FOOTER #####-->
-	<div class="container well foot">
-		<div class="footer-bottom">
-			<div class="copyrights col-sm-12 col-md-12">
-				<div class>2017.Lastoon Animation</div>
+   <footer>
+   	<div class="container well foot">
+   		<div class="row">
+   			<div class="footer-bottom">
+			<div class="col-xs-12 col-md-4 col-sm-12">
+				<p class="adres">Lastoon animation <br>
+					Warsawa<br>
+					al. Aleja "Solidarnosci" 117/207<br>
+					s00-140<br>
+				</p>
+			</div>
+			<div class="col-xs-12 col-md-4 col-sm-12">
+				<div class="animation ic">
+					<a href="https://www.instagram.com/lastoonanimation/" target="_blank">
+						<img class="img-responsive" src="img/icon/inst-color.png" style="border-radius: 8px;" alt>
+					</a>
+				</div>
+				<div class="animation ic">
+					<a href="https://www.behance.net/lastoon" target="_blank">
+						<img class="img-responsive" src="img/icon/be-color.png" style="border-radius: 8px;" alt>
+					</a>
+				</div>
+				<div class="animation ic">
+					<a href="https://www.youtube.com/channel/UCHl5-R4dHk3Gi03gHosoOrw" target="_blank">
+						<img class="img-responsive" src="img/icon/yout-color.png" style="border-radius: 8px;" alt>
+					</a>
+				</div>
+				<div class="animation ic">
+					<a href="https://www.facebook.com/lastoon/" target="_blank">
+						<img class="img-responsive" src="img/icon/fb-color.png" style="border-radius: 8px;" alt>
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-4 col-sm-12">
+				<div>
+					<h4>2017 &copy; Lastoon Animation</h4>
+				</div>
 			</div>
 		</div>
+   		</div>
+		
 	</div>
+   </footer>   
+	
 	<!--####### /FOOTER #####-->
 
 
@@ -184,6 +213,11 @@ $(document).ready(function(){
     });
 });    
 </script>
+<?php
+$msg = 'Name: '.$_POST['name']."\r\n Surname: ".$_POST['surname']."\r\n E-Mail: ".$_POST['mail']."\r\n Message: ".$_POST['message'];
+mail("kristinenyunko@gmail.com", "Новая заявка!", $msg);
+echo ;
+?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
