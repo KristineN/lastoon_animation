@@ -8,16 +8,13 @@
 }
 html {
 	min-height: 100%;
-	position: relative;
-	padding-bottom: 90px;
-	
+	position: relative;	
 }
 
 body {
 	background-color: rgb(44,148,173);
 	font-family: Facile Sans;
 	font-weight: 400;
-	margin-bottom: 55px !important;
 }
 body .container {
 	padding: 0;
@@ -127,8 +124,6 @@ h2 {
 	margin-bottom: 0;
 	margin-top: 20px;
 	background-color: rgb(229,240,244);
-	
-	padding-bottom: 60px;
 	padding-right: 0;
 	padding-left: 0;
 
