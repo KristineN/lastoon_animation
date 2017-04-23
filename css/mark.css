@@ -69,7 +69,9 @@ option {
 }
 /* /HEADER */
 
-
+h3 {
+	text-align: center;
+}
 .container {
 	padding: 0;
 }
@@ -104,7 +106,7 @@ option {
 }
 
 
-/* -------------ffoooooooter -------- */
+/* ----FOOTER---- */
 .foot {
 	height: auto;
 	margin-bottom: 0;
@@ -124,3 +126,4 @@ option {
 	margin-right: 8px;
 	padding-top: 22px;
 }
+/* ----/FOOTER---- */

@@ -76,7 +76,9 @@ option {
 	padding: 40px;
 	border-radius: 4px;
 }
-
+h4 {
+	text-align: center;
+}
 .row h4 {
 	margin-left: 15px;
 	margin-bottom: 5px;

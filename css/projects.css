@@ -111,7 +111,7 @@ ul#filter {
 	font-size: 19px;
 	text-decoration: none;
 }
-.mix > div > h2 > a:hover {
+.caption > h2 > a:hover {
 	color: rgb(44,148,173);
 	text-decoration: none;
 }
@@ -136,13 +136,24 @@ ul#filter {
 }
 
 
-/* -------------ffoooooooter -------- */
+/* ----FOOTER---- */
 .foot {
+	height: 92px;
 	margin-bottom: 0;
 	margin-top: 20px;
 	background-color: rgb(229,240,244);
-	position: absolute;
-	width: 98%;
-	padding-bottom: 60px;
+	padding-right: 0;
+	padding-left: 0;
 
 }
+.adres {
+	color: rgb(44,148,173);
+	text-align: center;
+}
+.ic {
+	float: right;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-top: 22px;
+}
+/* ----/FOOTER---- */
