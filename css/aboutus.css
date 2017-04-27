@@ -67,6 +67,9 @@ option {
 
 /* HEADER */
 
+h2 {
+	margin-left: 40px;
+}
 .container {
 	padding: 0;
 }

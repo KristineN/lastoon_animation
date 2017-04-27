@@ -72,6 +72,7 @@ option {
 h3 {
 	text-align: center;
 }
+
 .container {
 	padding: 0;
 }
@@ -96,6 +97,7 @@ h3 {
 	padding: 0 10px 10px 10px;
 	margin-top: 20px;
 }
+
 #information > p > strong {
 	color: rgb(44,148,173);
 }
@@ -103,6 +105,10 @@ h3 {
 	display: block;
 	max-width: 100%;
 	height: auto;
+}
+.thumbnail p {
+	margin: 0 36px 10px;
+	text-align: center;
 }
 
 
