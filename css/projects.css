@@ -10,7 +10,6 @@ body {
 	background-color: rgb(44,148,173);
 	font-family: Facile Sans;
 	font-weight: 400;
-	height: 100%;
 }
 @font-face {
 	font-family: Facile Sans;
@@ -20,11 +19,7 @@ body {
 	src: url(fonts/Facile Sans.eot?#iefix) format("embedded-onetype");
 	src: url(fonts/fonts/Facile Sans.svg#Facile Sans) format("svg");
 }
-header {
-	background-color: aliceblue;
-	margin-bottom: 10px;
-	border-radius: 4px;
-}
+
 a {
 	color: rgb(146,195,209);
 	text-decoration: none;
@@ -124,16 +119,8 @@ ul#filter {
 .image {
 	border: 10px solid #fff;
 }
-.animation {
-	min-height: 250px;
-	border: 10px solid #fff;
-	background-size: cover;
-}
-.animation a {
-	display: block;
-	width: 100%;
-	min-height: 250px;
-}
+
+
 
 
 /* ----FOOTER---- */
@@ -151,9 +138,19 @@ ul#filter {
 	text-align: center;
 }
 .ic {
+	border: none;
 	float: right;
 	margin-left: 8px;
 	margin-right: 8px;
 	padding-top: 22px;
+}
+.animation {
+	min-height: 90px;
+	background-size: cover;
+}
+.animation a {
+	display: block;
+	width: 100%;
+	min-height: 50px;
 }
 /* ----/FOOTER---- */
