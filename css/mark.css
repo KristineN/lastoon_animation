@@ -5,11 +5,11 @@ html {
 
 body {
 	background-color: rgb(44,148,173);
-	font-family: Facile Sans;
+	font-family: 'Facile Sans';
 	font-weight: 400;
 }
 @font-face {
-	font-family: Facile Sans;
+	font-family: 'Facile Sans';
 	src: url(fonts/Facile Sans.woff);
 	src: url(fonts/Facile Sans.ttf) format("truetype");
 	src: url(fonts/Facile Sans.otf);
@@ -23,7 +23,7 @@ a {
 }
 h1,
 h2 {
-	font-family: Facile Sans;
+	font-family: 'Facile Sans';
 	color: rgb(146,195,209);
 }
 
@@ -109,6 +109,9 @@ h3 {
 .thumbnail p {
 	margin: 0 36px 10px;
 	text-align: center;
+}
+p strong {
+	color: rgb(44,148,173);
 }
 
 
